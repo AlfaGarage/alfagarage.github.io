@@ -8,10 +8,9 @@
 }
 
 
-head, body, footer {
+head {
 	padding-top: 50px;    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
 	color: #959595;
-	font-family:'Droid Arabic Naskh', serif;
 	}
 
 div{
@@ -27,6 +26,10 @@ h5,
 h6 {
 	color: #417cee;
 	}
+
+.arabic{
+	font-family:'Droid Arabic Naskh', serif;
+}
 	
 .feature > h1{
 	background-color: transparent;
