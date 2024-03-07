@@ -1,0 +1,342 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+head, body, footer {
+	padding-top: 50px;    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+	color: #959595;
+	font-family:'Droid Arabic Naskh', serif;
+	}
+
+div{
+	min-width: 220px;
+}
+
+	
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	color: #417cee;
+	}
+	
+.feature > h1{
+	background-color: transparent;
+	color: white;
+	}
+
+.feature{
+	position: relative;
+	height: 300px;
+}
+
+.feature > .container{
+	width: 100%;
+	position: absolute;
+	top: 25%;
+	left: 0;
+}
+
+.feature-p{
+	color: rgb(200, 200, 200);
+}
+
+.feature-vid{
+	margin: 0;
+	display: block;
+	position: center;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+  	height: 100%;
+  	width: 100%;
+	z-index: -1;
+}
+
+.btn {
+	text-shadow: none;
+	background-color: white;
+	color: #417cee
+	}
+
+.feature > .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+.promo {
+	border-width: 1px;
+	border-color: #eeb341;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+.promo,
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
+    color: white;
+	text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+
+.top{
+	margin-bottom: 0px !important;
+	border-bottom: none;
+}
+
+.middle{
+	margin-bottom: 0px !important;
+	border-bottom: none;
+	margin-top: 0px !important;
+	border-top: none;
+
+}
+
+.bottom{
+	margin-top: 0px !important;
+	border-top: none;
+}
+
+.service-item, .expect-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.service-item:hover, .expect-item:hover {
+    background-size: 125%; 
+    border: 5px solid #417cee;
+    line-height: 170px;
+}
+
+.service-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.expect-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-item.item-1{
+	background: url('../Images/Car Wash Image.jpg');
+	background-size: cover;
+	background-position: center;;
+	}
+
+.service-item.item-2{
+	background: url('../Images/Car Repair Image.jpg');
+	background-size: cover;
+	background-position: center;
+	}		
+
+.service-item.item-3{
+	background: url('../Images/Generator Image.jpg');
+	background-size: cover;
+	background-position: center;
+	}		
+
+.service-item.item-4{
+	background: url('../Images/Motorcycle Image.jpg');
+	background-size: cover;
+	background-position: 0px -500px;
+	}	
+
+.service-item.item-5{
+	background: url('../Images/Keys Image.jpg');
+	background-size: cover;
+	background-position: center;
+	}		
+
+.expect-item.item-1{
+	background: url('../Images/Multiple Car Image.jpg');
+	background-size: cover;
+	background-position: center;
+	}
+
+.expect-item.item-2{
+	background: url('../Images/Service Image.jpg');
+	background-size: cover;
+	background-position: center;
+	}	
+
+.expect-item.item-3{
+	background: url('../Images/Car Parts Image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.map{
+	margin: auto;
+	height: 400px;
+	width: inherit;
+	max-width: 90vw;
+	background: url('../Images/Map Image.png');
+	background-size: cover;
+	background-position: center;
+	border: 2px solid #eeb341;
+}
+
+.terms{
+	text-align: center;
+}
+
+text.bottom{
+	display: flex;
+	align-items: center;
+}
+
+
+/*
+*************************** 
+Override Bootstrap Classes 
+***************************
+*/
+
+/* Links */
+a, a:focus{
+  color: #eeb341;
+  text-decoration: none;
+}
+a:hover{
+  color: #ee8341;
+  text-decoration: underline;
+}
+
+/* Navbar */
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-header{
+	display: flex;
+	align-items: center;
+}
+
+.navbar-toggle{
+	margin: 10px;
+}
+
+.navbar-brand{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #417cee;
+	padding: 15px 10px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: #410cee;
+	background-color: transparent;
+}
+
+
+.lg-screen-logo{
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.lg-screen-logo:first-child{
+	height: 30px;
+}
+
+
+
+/* Primary Buttons */
+.btn-primary {
+	color: #417cee;
+	background-color: white;
+	border-color: #417cee;
+}
+.btn-primary:focus {
+	color: #417cee;
+	background-color: white;
+	border-color: #417cee;
+}				
+.btn-primary:hover {
+	color: white;
+	background-color: #417cee;
+	border-color: white;
+}
+.btn-primary:active,
+.open > .dropdown-toggle.btn-primary {
+  color: #417cee;
+  background-color: white;
+  border-color: #417cee;
+}
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus {
+	color: #417cee;
+	background-color: white;
+	border-color: #417cee;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: white;
+	color: #417cee; 
+	border: 1px solid #417cee;
+}
+
+.navbar-default .navbar-toggle, 
+.navbar-default .navbar-toggle:active{
+    background-color: #417cee;
+	color: white;
+}
+
+
+/* Media Dependant CSS */
+@media only screen and (max-width: 550px){
+	
+	.lg-screen-logo > :nth-child(2){
+		display: none;
+	}
+
+	.lg-screen-logo{
+		position: absolute;
+		left: 38%;
+	}
+
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+
+	.lg-screen-logo > .img-logo{
+		height: 25px;
+	}
+
+	.lg-screen-logo{
+		height: 25px;
+	}
+
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: -45px;
+	}
+
+}
+

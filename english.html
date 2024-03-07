@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Alfa Garage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link href="css/custom.css" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container nav-color">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" onclick="this.blur()">
+                    <span class="sr-only">Toggle navigation</span>
+					<span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+					<div class="lg-screen-logo">
+						<img class="img-logo" src="Images/Car-Logo.svg">
+						<img class="img-logo" src="Images/Name-Text-Logo.svg">
+					</div>
+					
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#car-wash">Car Wash</a></li>
+							<li><a href="#car-repair">Car Repair</a></li>
+							<li><a href="#generator-repair">Generator Repair</a></li>
+							<li><a href="#motorcycle-repair">Motorcycle Repair</a></li>
+							<li><a href="#key-dup">Key Duplication</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+							<span class="glyphicon glyphicon-phone"></span>Contact Us</a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+							<li><a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+						</ul>
+					</li>
+                    <li>
+                        <a href="#map"><span class="glyphicon glyphicon-map-marker"></span> Location</a>
+                    </li>
+                    <li>
+                        <a class="language" href="index.html"><span class="glyphicon glyphicon-globe"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<!-- Feature -->
+	<div class="feature">
+		<video class="feature-vid" playsinline autoplay muted loop>
+			<source src="Images\Mechanic B-ROLL.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-wrench"></span> Fix your vehicle with ease</h1>
+			<p class="feature-p">Get right on over to Alfa Garage for all your vehicle repairing needs.</p>
+			<p><a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-earphone"></span> Call Now</a></p>
+			
+		</div>
+	</div>
+
+	<div class="container text-center">
+		<h1>Who are we?</h1>
+		<p class="lead">We are a commercial garage that offers car services for the people who need it.
+			We are located in Aramoun, and we love what we do. If your vehicle needs repair, or just a 
+			good old wash, make a trip over here and we'll get you what you want. 
+		</p>	
+	</div>
+
+
+	<!-- Services -->
+	<div class="container">
+        <div class="row">
+            <div class="col-ls-12">
+                <h1 class="text-center">What services do we offer?</h1>
+                <p class="lead text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laid-out Services -->
+	<div class="container-fluid top">
+        <div class="row promo top">
+        	<a href="#">
+				<div id="car-wash" class="col-md-6 service-item item-1">
+					<h3>
+						Car Washing
+					</h3>
+				</div>
+            </a>
+            <a href="#">
+				<div id="car-repair" class="col-md-6 service-item item-2">
+					<h3>
+						Car Servicing and Repairs
+					</h3>
+				</div>
+            </a>
+        </div>
+		<div class="row promo middle">
+        	<a href="#">
+				<div id="generator-repair" class="col-md-6 service-item item-3">
+					<h3>
+						Generator Repair
+					</h3>
+				</div>
+            </a>
+            <a href="#">
+				<div id="motorcycle-repair" class="col-md-6 service-item item-4">
+					<h3>
+						Motorcycle Servicing and Repair
+					</h3>
+				</div>
+            </a>
+        </div>
+		<div class="row promo bottom">
+        	<a href="#">
+				<div id="key-dup" class="col-md-12 service-item item-5">
+					<h3>
+						Key Duplication
+					</h3>
+				</div>
+            </a>
+        </div>
+    </div>
+
+	<!-- Expectations -->
+    <div class="container">
+        <div class="row">
+            <div class="col-ls-12">
+                <h1 class="text-center">What can you expect from us?</h1>
+                <p class="lead text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laid-out Expectations -->
+	<div class="container-fluid">
+        <div class="row promo">
+				<div class="col-md-4 expect-item item-1">
+					<h3>
+						Any Vehicle Type
+					</h3>
+				</div>
+				<div class="col-md-4 expect-item item-2">
+					<h3>
+						Reliable Service
+					</h3>
+				</div>
+				<div class="col-md-4 expect-item item-3">
+					<h3>
+						Original Parts
+					</h3>
+				</div>
+        </div>
+    </div>
+	
+		
+	<!-- Footer -->
+	<footer>
+	
+		<h1 class="text-center">Find Us</h1>
+		<!-- Map -->
+		<div id="map" class="map"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 footer-info-item text-center">
+						<p class="lead">
+							<a href="https://www.google.com/maps/place/33°46'59.6&quot;N+35°29'15.7&quot;E" class="map-link" target="_blank">
+								Choueifet, Dawhet Aramoun, Next to Pharma K Pharmacy
+							</a>
+						</p>
+						<h2>Contact Us</h2>
+						<p class="lead"><span class="glyphicon glyphicon-phone-alt"></span> +961 76 125 896<br>
+						alfa.garage@gmail.com</p>
+					</div>
+				</div>
+			</div>
+        
+        <!-- Copyright etc -->
+        <div class="small-print text-bottom">
+        	<div class="container terms">
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; alfagarage.com 2024 </p>
+        	</div>
+        </div>
+        
+	</footer>
+
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+</body>
+
+</html>
