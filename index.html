@@ -82,9 +82,9 @@
 			Your browser does not support the video tag.
 		</video>
 		<div class="container">
-			<h1><span class="glyphicon glyphicon-wrench"></span> قم بتصليح آليتك هنا</h1>
+			<h1><span class="glyphicon glyphicon-wrench"></span> قم بتصليح سيارتك هنا</h1>
 			<p class="feature-p">اهلا بك الى كاراج ألفا. ستجد العديد من الخدمات الاصلاحية</p>
-			<p><a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-earphone"></span> اتصل الآن</a></p>
+			<p><a class="btn btn-primary" href="tel:+96171739192"><span class="glyphicon glyphicon-earphone"></span> اتصل الآن</a></p>
 			
 		</div>
 	</div>
@@ -223,6 +223,27 @@
 	
 	<!-- IE10 viewport bug workaround -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+	if ("IntersectionObserver" in window) {
+		let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+			entry.target.classList.add("visible");
+			lazyBackgroundObserver.unobserve(entry.target);
+			}
+		});
+		});
+
+		lazyBackgrounds.forEach(function(lazyBackground) {
+		lazyBackgroundObserver.observe(lazyBackground);
+    });
+  }
+});
+	</script>
 	
 </body>
 
