@@ -84,7 +84,7 @@
 		<div class="container">
 			<h1><span class="glyphicon glyphicon-wrench"></span> قم بتصليح سيارتك هنا</h1>
 			<p class="feature-p">اهلا بك الى كاراج ألفا. ستجد العديد من الخدمات الاصلاحية</p>
-			<p><a class="btn btn-primary" href="tel:+96171739192"><span class="glyphicon glyphicon-earphone"></span> اتصل الآن</a></p>
+			<p><a class="btn btn-primary" href="tel:+96176125896"><span class="glyphicon glyphicon-earphone"></span> اتصل الآن</a></p>
 			
 		</div>
 	</div>
@@ -110,14 +110,14 @@
 	<div class="container-fluid top">
         <div class="row promo top">
         	<a href="#">
-				<div id="car-wash" class="col-md-6 service-item item-1">
+				<div id="car-wash" class="col-md-6 service-item item-1 lazyload">
 					<h3>
 						غسيل السيارات
 					</h3>
 				</div>
             </a>
             <a href="#">
-				<div id="car-repair" class="col-md-6 service-item item-2">
+				<div id="car-repair" class="col-md-6 service-item item-2 lazyload">
 					<h3>
 						تصليح و ترميم السيارات
 					</h3>
@@ -126,14 +126,14 @@
         </div>
 		<div class="row promo middle">
         	<a href="#">
-				<div id="generator-repair" class="col-md-6 service-item item-3">
+				<div id="generator-repair" class="col-md-6 service-item item-3 lazyload">
 					<h3>
 						تصليح المولدات الكهربائية
 					</h3>
 				</div>
             </a>
             <a href="#">
-				<div id="motorcycle-repair" class="col-md-6 service-item item-4">
+				<div id="motorcycle-repair" class="col-md-6 service-item item-4 lazyload">
 					<h3>
 						تصليح و ترميم الدراجات النارية
 					</h3>
@@ -142,7 +142,7 @@
         </div>
 		<div class="row promo bottom">
         	<a href="#">
-				<div id="key-dup" class="col-md-12 service-item item-5">
+				<div id="key-dup" class="col-md-12 service-item item-5 lazyload">
 					<h3>
 						استنساخ و صب المفاتيح
 					</h3>
@@ -164,17 +164,17 @@
     <!-- Laid-out Expectations -->
 	<div class="container-fluid">
         <div class="row promo">
-				<div class="col-md-4 expect-item item-1">
+				<div class="col-md-4 expect-item item-1 lazyload">
 					<h3>
 						تعدد خبرة السيارات
 					</h3>
 				</div>
-				<div class="col-md-4 expect-item item-2">
+				<div class="col-md-4 expect-item item-2 lazyload">
 					<h3>
 						خدمة عالية الجودة
 					</h3>
 				</div>
-				<div class="col-md-4 expect-item item-3">
+				<div class="col-md-4 expect-item item-3 lazyload">
 					<h3>
 						قطع أصلية
 					</h3>
@@ -225,23 +225,20 @@
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-		var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+	$(window).load(function(){
 
-	if ("IntersectionObserver" in window) {
-		let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
-		entries.forEach(function(entry) {
-			if (entry.isIntersecting) {
-			entry.target.classList.add("visible");
-			lazyBackgroundObserver.unobserve(entry.target);
-			}
-		});
-		});
+	$('.lazyload').each(function() {
 
-		lazyBackgrounds.forEach(function(lazyBackground) {
-		lazyBackgroundObserver.observe(lazyBackground);
-    });
-  }
+	var lazy = $(this);
+	var src = lazy.attr('data-src');
+
+	$('<img>').attr('src', src).load(function(){
+		lazy.find('img.spinner').remove();
+		lazy.css('background-image', 'url("'+src+'")');
+	});
+
+});
+
 });
 	</script>
 	
