@@ -17,6 +17,8 @@
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+	<!-- Title Icon -->
+	<link rel="icon" type="image/x-icon" href="/Images/Title-Icon.ico">
 
 </head>
 
@@ -193,7 +195,7 @@
 				<div class="row">
 					<div class="col-sm-12 footer-info-item text-center">
 						<p class="lead">
-							<a href="https://www.google.com/maps/place/33°46'59.6&quot;N+35°29'15.7&quot;E" class="map-link" target="_blank">
+							<a href="https://maps.app.goo.gl/ayDHkFf8dHiFtGER6" class="map-link" target="_blank">
 								الشويفات - دوحة عرمون - بجانب صيدلية فارما كاي
 							</a>
 						</p>
@@ -223,24 +225,6 @@
 	
 	<!-- IE10 viewport bug workaround -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-
-	<script>
-	$(window).load(function(){
-
-	$('.lazyload').each(function() {
-
-	var lazy = $(this);
-	var src = lazy.attr('data-src');
-
-	$('<img>').attr('src', src).load(function(){
-		lazy.find('img.spinner').remove();
-		lazy.css('background-image', 'url("'+src+'")');
-	});
-
-});
-
-});
-	</script>
 	
 </body>
 
